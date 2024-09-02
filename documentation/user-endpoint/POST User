@@ -1,0 +1,20 @@
+CREATE USER ENDPOINT
+
+Create a new user on the database using a payload.
+
+POST - /api/user
+
+Payload: No null values are accepted
+{
+    "password" : "encrypted-password",
+    "email" : "user@email.com",
+    "name" : "user"
+}
+
+Response:
+400 - User Validation Error -> When the payload is not Valid
+200 - OK
+{
+    "id" : 12,
+    "name" : "user"
+}

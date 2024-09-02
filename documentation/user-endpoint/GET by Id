@@ -1,0 +1,15 @@
+GET USER BY ID ENDPOINT
+
+Get a non deleted User by Id
+
+GET - /api/user/{userId}
+Where userId is a Long value
+
+Response:
+404 - User Not Found -> When the user was not found or is deleted.
+200 - OK -> UserGetByIdDto
+{
+    "id" : 12,
+    "email" : "user@email.com",
+    "name" : "user"
+}

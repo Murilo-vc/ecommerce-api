@@ -1,0 +1,10 @@
+DELETE PRODUCT ENDPOINT
+
+Soft deletes a non deleted Product using a Id
+
+DEL - /api/product/{productId}
+Where productId is a Long value
+
+Response:
+404 - Product Not Found -> When the product was not found or is deleted.
+204 - No Content

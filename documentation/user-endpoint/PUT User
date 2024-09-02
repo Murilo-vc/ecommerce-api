@@ -1,0 +1,18 @@
+UPDATE USER ENDPOINT
+
+Update a field of a non deleted user
+
+PUT - /api/user/{userId}
+Where userId is a Long value
+
+Payload: No null values are accepted
+{
+    "password" : "encrypted-password",
+    "email" : "user@email.com",
+    "name" : "user"
+}
+
+Response:
+400 - User Validation Error -> When the payload is not Valid
+404 - User Not Found -> When the user was not found or is deleted.
+204 - No Content

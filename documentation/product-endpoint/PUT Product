@@ -1,0 +1,18 @@
+UPDATE PRODUCT ENDPOINT
+
+Update a field of a non deleted product
+
+DEL - /api/product/{productId}
+Where productId is a Long value
+
+Payload: No null values are accepted
+{
+    "name" : "USB cable",
+    "price" : 11.50,
+    "description" : "USB cable with 20 centimeters of length"
+}
+
+Response:
+400 - Product Validation Error -> When the payload is not Valid
+404 - Product Not Found -> When the product was not found or is deleted.
+204 - No Content

@@ -1,0 +1,10 @@
+DELETE USER ENDPOINT
+
+Soft deletes a non deleted User using a Id
+
+DEL - /api/user/{userId}
+Where userId is a Long value
+
+Response:
+404 - User Not Found -> When the user was not found or is deleted.
+204 - No Content

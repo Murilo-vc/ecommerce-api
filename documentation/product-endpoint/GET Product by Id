@@ -1,0 +1,16 @@
+GET PRODUCT BY ID ENDPOINT
+
+Gets a non deleted Product by Id
+
+GET - /api/product/{productId}
+Where userId is a Long value
+
+Response:
+404 - Product Not Found -> When the product was not found or is deleted.
+200 - OK -> ProductGetByIdDto
+{
+    "id" : 2,
+    "name" : "mouse",
+    "description" : "simple mouse for a computer",
+    "price" : 30.00
+}
